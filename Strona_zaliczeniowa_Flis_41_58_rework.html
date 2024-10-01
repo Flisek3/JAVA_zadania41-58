@@ -1,0 +1,436 @@
+<html>
+<head>
+<title>Flis_3G1</title>
+<link rel="Shortcut icon" href="Logo.jpg" />
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+	ul, li { 
+
+
+list-style-type: none;
+                
+color:grey;
+		text-align: center;
+               
+		}
+		marquee{
+		color:#F0FFF0;
+		background: linear-gradient(230deg, white 0%, #7B68EE 33%, #7B68EE 66%, white 99%);
+		}
+	.zad a:link , ul a:visited{
+	    font-family: "Playwrite DE Grund", cursive;
+		display: block;
+height:35px;
+		text-decoration: none;
+		background: linear-gradient(230deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+		color: #F0FFF0;
+				text-align: center;
+
+		font-size: 1.3em;
+
+                border:2px outset teal;
+					margin:auto;
+		
+		}
+	.zad a:hover {
+ font-family: "Playwrite DE Grund", cursive;
+					text-align: center;
+                border-style:inset;
+background: linear-gradient(30deg, #5C9FD3 0%,#BD8BCA 50%);
+		color: #F0FFF0;
+
+					margin:auto;
+		}
+	.zad a:active {
+			text-align: center;
+font-family: "Playwrite DE Grund", cursive;
+		background: linear-gradient(30deg, grey 0%, white 100%);
+color: #F0FFF0;
+	margin:auto;
+		}
+		
+		
+			.kod a:link , ul a:visited{
+font-family: "Playwrite DE Grund", cursive;
+		display: block;
+height:35px;
+		text-decoration: none;
+		background: linear-gradient(230deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+		color: #F0FFF0;
+				text-align: center;
+
+		font-size: 1.3em;
+		text-align: center;
+                border:2px outset teal;
+					margin:auto;
+		}
+	.kod a:hover {
+font-family: "Playwrite DE Grund", cursive;
+					text-align: center;
+                border-style:inset;
+background: linear-gradient(30deg, #5C9FD3 0%,#BD8BCA 50%);
+		color: #F0FFF0;
+
+					margin:auto;
+		}
+	.kod a:active {
+			text-align: center;
+font-family: "Playwrite DE Grund", cursive;
+		background: linear-gradient(30deg, grey 0%, white 100%);
+color: #F0FFF0;
+	margin:auto;
+		}
+		
+			.koniec a:link , ul a:visited{
+font-family: "Playwrite DE Grund", cursive;
+		display: block;
+		width:200px;
+height:35px;
+		text-decoration: none;
+		background: linear-gradient(230deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+		color: #F0FFF0;
+				text-align: center;
+
+		font-size: 1.3em;
+		text-align: center;
+                border:2px outset teal;
+					margin:auto;
+		}
+	.koniec a:hover {
+font-family: "Playwrite DE Grund", cursive;
+					text-align: center;
+                border-style:inset;
+background: linear-gradient(30deg, #5C9FD3 0%,#BD8BCA 50%);
+		color: #F0FFF0;
+
+					margin:auto;
+		}
+	.koniec a:active {
+			text-align: center;
+font-family: "Playwrite DE Grund", cursive;
+		background: linear-gradient(30deg, grey 0%, white 100%);
+		color: #F0FFF0;
+	margin:auto;
+		}
+		
+	#zegar{
+     color: #F0FFF0;
+    text-align: center;
+}	
+		
+		
+		
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2{
+  font-size: 30px;
+  text-transform: uppercase;
+font-family: "Playwrite DE Grund", cursive;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: #F0FFF0;
+  outline: none;
+  text-align: center;
+}
+
+
+
+
+p {
+  font-size: 1.2em;
+  line-height: 150%;
+  text-align: center;
+  color: #F0FFF0;
+  letter-spacing: .5px;
+font-family: "Playwrite DE Grund", cursive;
+}
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 120px;
+  height: 50px;
+  margin: 3.5px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+
+  outline: none;
+}
+.custom-btnB {
+  width: 120px;
+  height: 50px;
+  margin: 3.5px;
+  color: transparent;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
+
+/* 1 */
+.btn-1 {
+  background: rgb(6,14,131);
+  background: linear-gradient(230deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+  border: none;
+}
+.btn-1:hover {
+background: rgb(6,14,131);
+  background: linear-gradient(230deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+  border: none;
+   transform: scale(1.2);
+  
+  }
+  /* 2 */
+.btn-2 {
+  background: transparent;
+  
+  border: none;
+}
+
+/* 3 */
+.btn-3 {
+  font-family: 'Lato', sans-serif;
+  background: rgb(252, 199, 54);
+  color: black; 
+  border: 6px solid black; 
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn-3:hover {
+
+  background: linear-gradient(230deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+  border: none;
+   transform: scale(1.2);
+}
+  form {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+
+
+
+
+
+
+
+
+ 
+
+
+body {
+    
+    font-family: 'Nunito', sans-serif;
+    overflow: auto;
+    background: linear-gradient(230deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: linear-gradient(270deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.wave:nth-of-type(1) {
+    bottom: -3.75em;
+    animation: wave 15s linear reverse infinite;
+    opacity: 1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+
+.top-image { position: fixed; top: 0; right: 0; z-index: 1000; }
+  </style>
+  
+<script language="JavaScript">
+function okno_zamknij()
+{
+window.close()
+}
+ function odliczanie() {
+            var dzisiaj = new Date();
+            var dzien = dzisiaj.getDate();
+            var miesiac = dzisiaj.getMonth() + 1; 
+            var rok = dzisiaj.getFullYear();
+
+            var godzina = dzisiaj.getHours();
+            var minuta = dzisiaj.getMinutes();
+            var sekunda = dzisiaj.getSeconds();
+
+            document.getElementById("zegar").innerHTML =
+                dzien + "/" + miesiac + "/" + rok + " | " + godzina + ":" + minuta + ":" + sekunda;
+
+            setTimeout("odliczanie()", 1000);
+        }
+</script>
+</head>
+<body>
+
+
+
+<align="center">
+<h1>Prace ucznia: Fabian Flis z klasy 4G</h1><br>
+<marquee>Witaj! To jest moja strona z zadaniami :D</marquee>
+<div id="zegar"></div>
+<script>
+odliczanie();
+</script>
+<h1> Chcesz zamknać stronę? Kliknij tutaj:</h1>
+<ul class="koniec">
+<li><a href name="zamknij_okno" value="zamknij-Flis" onclick="okno_zamknij()">Zamknij stronę</a></li>
+<h1> Chcesz wrócić do poczekalni? Kliknij tutaj:</h1>
+<li><a href="tlo.html"name=Poczekalnia value="Poczekalnia" target="strony"/>Poczekalnia</a></li></b>
+<h1> Odświeżyć stronę bez naciskania f5? Kliknij tu:</h1>
+<li><a href type="reset" name="wyczyść">Odśwież stronę</a></li>
+</ul>  
+<table width=95% border="1" align="center">
+<tr>
+<td width=20% align=center>
+<h1 align="center"><b>Linki do zadań</b></h1>
+
+<ul class="zad">
+<li><a href="zadanie41_Flis.html"name=zadanie28_Flis value="zadanie41_Flis" target="strony"/><b>Zadanie41_Flis</a></li>
+<li><a href="zadanie42_Flis.html"name=zadanie29_Flis value="zadanie42_Flis" target="strony"/>Zadanie42_Flis</a></li>
+<li><a href="zadanie43_Flis.html"name=zadanie30_Flis value="zadanie43_Flis" target="strony"/>Zadanie43_Flis</a></li>
+<li><a href="zadanie44_Flis.html"name=zadanie31_Flis value="zadanie44_Flis" target="strony"/>zadanie44_Flis</a></li>
+<li><a href="zadanie45_Flis.html"name=zadanie32_Flis value="zadanie45_Flis" target="strony"/>zadanie45_Flis</a></li>
+<li><a href="zadanie46_Flis.html"name=zadanie28_Flis value="zadanie46_Flis" target="strony"/>Zadanie46_Flis</a></li>
+<li><a href="zadanie47_Flis.html"name=zadanie29_Flis value="zadanie47_Flis" target="strony"/>Zadanie47_Flis</a></li>
+<li><a href="zadanie48_Flis.html"name=zadanie30_Flis value="zadanie48_Flis" target="strony"/>Zadanie48_Flis</a></li>
+<li><a href="zadanie49_Flis.html"name=zadanie31_Flis value="zadanie49_Flis" target="strony"/>Zadanie49_Flis</a></li>
+<li><a href="zadanie50_Flis.html"name=zadanie32_Flis value="zadanie50_Flis" target="strony"/>zadanie50_Flis</a></li>
+<li><a href="zadanie51_Flis.html"name=zadanie28_Flis value="zadanie51_Flis" target="strony"/>Zadanie51_Flis</a></li>
+<li><a href="zadanie52_Flis.html"name=zadanie29_Flis value="zadanie52_Flis" target="strony"/>Zadanie52_Flis</a></li>
+<li><a href="zadanie53_Flis.html"name=zadanie30_Flis value="zadanie53_Flis" target="strony"/>Zadanie53_Flis</a></li>
+<li><a href="zadanie54_Flis.html"name=zadanie31_Flis value="zadanie54_Flis" target="strony"/>Zadanie54_Flis</a></li>
+<li><a href="zadanie55_Flis.html"name=zadanie32_Flis value="zadanie55_Flis" target="strony"/>zadanie55_Flis</a></li>
+<li><a href="zadanie56_Flis.html"name=zadanie28_Flis value="zadanie56_Flis" target="strony"/>Zadanie56_Flis</a></li>
+<li><a href="zadanie57_Flis.html"name=zadanie29_Flis value="zadanie57_Flis" target="strony"/>Zadanie57_Flis</a></li>
+<li><a href="zadanie58_Flis.html"name=zadanie30_Flis value="zadanie58_Flis" target="strony"/>Zadanie58_Flis</a></li></b>
+
+</ul>
+</td>
+<td align=center><iframe width=750 height=650 name="strony" src="tlo.html" border="0"></iframe>
+</td>
+<td width=20% align=center>
+<h1 align="center"><b>kody do zadań</b></h1>
+<ul class="kod">
+<li><a href="zadanie42_KOD_Flis.html"name=zadanie30_Flis value="zadanie42_Flis" target="strony"/><b>Zadanie42_Flis</a></li>
+<li><a href="zadanie43_KOD_Flis.html"name=zadanie31_Flis value="zadanie43_Flis" target="strony"/>Zadanie43_Flis</a></li>
+<li><a href="zadanie44_KOD_Flis.html"name=zadanie32_Flis value="zadanie44_Flis" target="strony"/>zadanie44_Flis</a></li>
+<li><a href="zadanie45_KOD_Flis.html"name=zadanie31_Flis value="zadanie45_Flis" target="strony"/>Zadanie45_Flis</a></li>
+<li><a href="zadanie46_KOD_Flis.html"name=zadanie32_Flis value="zadanie46_Flis" target="strony"/>zadanie46_Flis</a></li>
+<li><a href="zadanie47_KOD_Flis.html"name=zadanie31_Flis value="zadanie47_Flis" target="strony"/>Zadanie47_Flis</a></li>
+<li><a href="zadanie48_KOD_Flis.html"name=zadanie32_Flis value="zadanie48_Flis" target="strony"/>zadanie48_Flis</a></li>
+<li><a href="zadanie49_KOD_Flis.html"name=zadanie31_Flis value="zadanie49_Flis" target="strony"/>Zadanie49_Flis</a></li>
+<li><a href="zadanie50_KOD_Flis.html"name=zadanie32_Flis value="zadanie50_Flis" target="strony"/>zadanie50_Flis</a></li></b>
+</ul><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></td>
+</tr>
+</table>
+<HR SIZE=15 WIDTH=100% ALIGN=center style="background:linear-gradient(270deg, #4682B4 0%, #7FFFD4 33%, #7B68EE 66%, #E0FFFF 99%);">
+
+
+<div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+  </div>
+</body>
+</html>

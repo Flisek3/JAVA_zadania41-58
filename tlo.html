@@ -1,0 +1,454 @@
+<html>
+<head>
+<title>Flis_3G1</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 120px;
+  height: 50px;
+  margin: 3.5px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 100px; /* Zaokrąglenie krawędzi */
+  outline: none;
+}
+.custom-btnB {
+  width: 120px;
+  height: 50px;
+  margin: 3.5px;
+  color: transparent;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   
+    border-radius: 100px; /* Zaokrąglenie krawędzi */
+  outline: none;
+}
+
+
+/* 1 */
+.btn-1 {
+  background: rgb(6,14,131);
+  background: linear-gradient(30deg, #7FFFD4 0%,#6495ED 100%);
+  border: none;
+}
+.btn-1:hover {
+background: rgb(6,14,131);
+  background: linear-gradient(30deg, #7FFFD4 0%,#6495ED 100%);
+  border: none;
+   transform: scale(1.2);
+  
+  }
+  /* 2 */
+.btn-2 {
+  background: transparent;
+  
+  border: none;
+}
+
+/* 3 */
+.btn-3 {
+  font-family: 'Lato', sans-serif;
+  background: rgb(252, 199, 54);
+  color: black; 
+  border: 6px solid black; 
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn-3:hover {
+
+  background: linear-gradient(30deg, #7FFFD4 0%,#6495ED 100%);
+  border: none;
+   transform: scale(1.2);
+}
+  form {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+h1{
+color: white;
+font-family:'Nunito', sans-serif;
+}
+
+
+
+
+
+
+
+ 
+
+
+body {
+    
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(30deg, #7FFFD4 0%,#6495ED 100%); 
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+.box {
+	width: 150px;
+	height: 150px;
+	margin: 20px auto;
+}
+
+.cube,
+.half1,
+.half2,
+.container {
+  transform-style: preserve-3d;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  animation: cube 10s forwards infinite;
+  transform-origin: center 50px;
+  transform-style: preserve-3d;
+}
+
+.half1 {
+  height: 40px;
+  top: 0;
+  position: absolute;
+  animation: half 10s forwards infinite;
+  transform-origin: 50% 100%;
+}
+
+.part {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+  background-color: linear-gradient(270deg, Crimson 0%, white 100%);
+  position: absolute;
+}
+
+.part1 {
+  top: 0;
+  left: 40px;
+  transform-origin: 50% 100%;
+  animation: part1 10s forwards infinite;
+}
+
+.part2 {
+  top: 20px;
+  left: 40px;
+  transform-origin: 50% 0%;
+  animation: part2 10s forwards infinite;
+}
+
+.part3 {
+  top: 40px;
+  left: 40px;
+  transform-origin: 50% 0%;
+  animation: part3 10s forwards infinite;
+}
+
+.part4 {
+  top: 60px;
+  left: 40px;
+  transform-origin: 50% 0%;
+  animation: part4 10s forwards infinite;
+}
+
+.part5 {
+  left: 20px;
+  top: 20px;
+  transform-origin: 100% 50%;
+  animation: part5 10s forwards infinite;
+}
+
+.part6 {
+  left: 60px;
+  top: 40px;
+  transform-origin: 0% 50%;
+  animation: part6 10s forwards infinite;
+}
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 33px;
+  perspective: 300px;
+  transform-style: preserve-3d;
+}
+
+@keyframes cube {
+  0% {
+    transform: rotateX(0deg);
+  }
+  30% {
+    transform: rotateX(0deg);
+  }
+  40% {
+    transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg);
+  }
+  60% {
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
+  }
+  65% {
+    transform: rotateX(60deg) rotate(45deg) rotateZ(180deg);
+  }
+  70% {
+    transform: rotateX(60deg) rotate(45deg) rotateZ(180deg);
+  }
+  75% {
+    transform: rotateX(60deg) rotate(45deg) rotateZ(360deg);
+  }
+  80% {
+    transform: rotateX(60deg) rotate(45deg) rotateZ(360deg);
+  }
+  90% {
+    transform: rotateX(0deg) rotate(0deg) rotateZ(0deg);
+  }
+}
+
+@keyframes part1 {
+  40% {
+    transform: rotateX(0deg);
+  }
+  50%,
+  90% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@keyframes part2 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-179deg);
+  }
+  10% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  40% {
+    background-color: linear-gradient(270deg, Crimson 0%, white 100%);
+  }
+  45% {
+    background-color: linear-gradient(270deg, Crimson 0%, white 100%);
+  }
+  80% {
+    background-color: linear-gradient(270deg, Crimson 0%, white 100%);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes part3 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    transform: rotateX(-179deg);
+  }
+  20% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  40% {
+    background-color: linear-gradient(270deg, Crimson 0%, white 100%);
+  }
+  45% {
+    background-color: linear-gradient(270deg, Crimson 0%, white 100%);
+  }
+  90% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes part4 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: rotateX(-179deg);
+  }
+  30% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  40% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  90% {
+    opacity: 1;
+    transform: rotateX(90deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes part5 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    transform: rotateY(-179deg);
+  }
+  20% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  40% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  90% {
+    transform: rotateY(90deg);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes part6 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    transform: rotateY(179deg);
+  }
+  30% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  40% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(-90deg);
+  }
+  90% {
+    opacity: 1;
+    transform: rotateY(-90deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes half {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+  }
+  60% {
+    transform: rotateX(-90deg);
+  }
+  90% {
+    transform: rotateX(-90deg);
+  }
+}
+
+
+
+
+
+
+.top-image { position: fixed; top: 0; right: 0; z-index: 1000; }
+  </style>
+  
+</head>
+<body>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="box">
+  <div class="container">
+    <div class="cube">
+      <div class="half1">
+        <div class="part part1"></div>
+        <div class="part part2"></div>
+        <div class="part part5"></div>
+      </div>
+      <div class="half2">
+        <div class="part part3"></div>
+        <div class="part part4"></div>
+        <div class="part part6"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 align=center> Wybierz jakie zadanie chcesz otworzyć </h1>
+</body>
+</html>
